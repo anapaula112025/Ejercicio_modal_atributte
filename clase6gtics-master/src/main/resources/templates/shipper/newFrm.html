@@ -11,6 +11,7 @@
                  role="alert"></div>
             <hr/>
             <form method="post" th:action="@{'/shipper/save'}" th:object="${shipper}">
+                <input th:field="*{shipperId}" type="hidden"/>
                 <div class="mb-3">
                     <label class="form-label">Nombre de la compañía</label>
                     <input type="text" class="form-control" th:field="*{companyName}"/>
